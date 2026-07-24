@@ -923,7 +923,7 @@ export default function App() {
                 >
                   <span
                     className="text-xs text-slate-100 font-semibold truncate pr-2 flex items-center gap-1.5"
-                    title={guest?.fullName|| guest}
+                    title={guest?.fullName|| "guest"}
                   >
                     <span className="text-amber-400">✋</span> {guest.fullName}
                   </span>
@@ -1582,7 +1582,7 @@ export default function App() {
                     return (
                       <div
                         key={`top-seat-${seatIndex}`}
-                        title={guest?.fullName||guest}
+                        title={guest?.fullName||"guest"}
                         draggable={!!guest}
                         onDragStart={(e) =>
                           guest && handleDragStartGuest(e, guest.id)
@@ -1654,7 +1654,7 @@ export default function App() {
                       <div
                         key={`bottom-seat-${seatIndex}`}
                         
-                        title={guest?.fullName||guest}
+                        title={guest?.fullName||"guest"}
                         draggable={!!guest}
                         onDragStart={(e) =>
                           guest && handleDragStartGuest(e, guest.id)
